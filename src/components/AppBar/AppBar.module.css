@@ -1,0 +1,15 @@
+.appbar__wrapper {
+  background-color: orange;
+  box-shadow: 4px 3px 15px 0px rgba(66, 68, 90, 1);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+.appbar__item {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

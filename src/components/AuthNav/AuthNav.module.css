@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  gap: 17px;
+}
+.nav__link {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  transition: all 200ms linear;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: white;
+  transform: scale(1.1);
+}
