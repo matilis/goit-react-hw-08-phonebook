@@ -9,7 +9,7 @@ const Home = () => (
     </Helmet>
     <div className={css.homePage}>
       <h1 className={css.homePage__title}>Phonebook</h1>
-      <h3 className={css.homePage__subtitle}>"...you will never forget"</h3>
+      <h3 className={css.homePage__subtitle}>" ... you will never forget"</h3>
     </div>
   </div>
 );
