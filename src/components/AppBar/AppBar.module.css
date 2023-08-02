@@ -1,14 +1,14 @@
 .appbar__wrapper {
-  background-color: orange;
-  box-shadow: 4px 3px 15px 0px rgba(66, 68, 90, 1);
   display: flex;
-  height: 40px;
   justify-content: center;
-  border-bottom-left-radius: 90px;
-  border-bottom-right-radius: 90px;
+  margin-top: 3px;
 }
 .appbar__item {
-  width: 1000px;
+  height: 45px;
+  width: 70%;
+  border-bottom: 1px solid rgb(206, 205, 205);
+  font-family: 'Dosis', sans-serif;
+  justify-content: center;
   display: flex;
   justify-content: space-between;
   align-items: center;

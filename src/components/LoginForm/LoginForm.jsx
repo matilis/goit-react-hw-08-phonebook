@@ -1,24 +1,29 @@
-
+import css from './LoginForm.module.css';
 
 export const LoginForm = () => {
+  const handleSubmit = event => {
+    event.preventDefault();
+    const form = event.currentTarget;
 
-    const handleSubmit = event => {
-        event.preventDefault()
-        const form = event.currentTarget;
+    console.log(form.value);
+    form.reset();
+  };
 
-        console.log(form.value);
-        form.reset()
-    }
-    
-    return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                Email<input type="email" name="email" />
-            </label>
-            <label>
-                Password<input type="password" name="password" />
-            </label>
-            <button type="submit">Log in</button>
-        </form>
-    )
-}
+  return (
+    <div className={css.form__wrapper}>
+      <form className={css.form} onSubmit={handleSubmit}>
+        <label className={css.form__label}>
+          Email
+          <input className={css.form__input} type="email" name="email" />
+        </label>
+        <label className={css.form__label}>
+          Password
+          <input className={css.form__input} type="password" name="password" />
+        </label>
+        <button className={css.form__btn} type="submit">
+          Log in
+        </button>
+      </form>
+    </div>
+  );
+};

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import css from './Navigation.module.css';
+// import homeSvg from 'images/home.png';
 
 export const Navigation = () => {
   return (

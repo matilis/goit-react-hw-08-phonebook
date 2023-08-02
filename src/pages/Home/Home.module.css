@@ -5,67 +5,31 @@
 }
 .homePage__title {
   font-size: 50px;
+  font-family: 'Dosis', sans-serif;
   padding-top: 20px;
   margin: 30px 0 0 0;
-  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
-  animation: pulse 12s infinite;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  animation: pulse 10s infinite;
 }
 @keyframes pulse {
   0% {
-    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+    text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
   }
-  10% {
-    text-shadow: 5px 4px 6px rgba(66, 68, 90, 1);
+  25% {
+    text-shadow: 3px 2px 3px rgba(66, 68, 90, 1);
   }
-  20% {
-    text-shadow: 6px 4px 6px rgba(66, 68, 90, 1);
-  }
-  30% {
-    text-shadow: 7px 4px 6px rgba(66, 68, 90, 1);
-  }
-  40% {
-    text-shadow: 8px 4px 6px rgba(66, 68, 90, 1);
-  }
-  50% {
-    text-shadow: 9px 4px 6px rgba(66, 68, 90, 1);
-  }
-  60% {
-    text-shadow: 8px 4px 6px rgba(66, 68, 90, 1);
-  }
-  70% {
-    text-shadow: 7px 4px 6px rgba(66, 68, 90, 1);
-  }
-  80% {
-    text-shadow: 6px 4px 6px rgba(66, 68, 90, 1);
-  }
-  90% {
-    text-shadow: 5px 4px 6px rgba(66, 68, 90, 1);
+
+  75% {
+    text-shadow: -2px 2px 3px rgba(66, 68, 90, 1);
   }
   100% {
-    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+    text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
   }
 }
 .homePage__subtitle {
   font-size: 20px;
+  font-family: 'Dosis', sans-serif;
   font-style: italic;
-  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
   animation: pulse 12s infinite;
 }
-
-/* .homePage__subtitle {
-  position: absolute;
-  font-size: 20px;
-  font-style: italic;
-  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
-  animation: floatText 5s infinite alternate ease-in-out;
-  top: 150px;
-}
-@keyframes floatText {
-  from {
-    left: 41%;
-  }
-
-  to {
-    left: 43%;
-  }
-} */

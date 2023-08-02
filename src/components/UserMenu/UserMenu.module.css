@@ -2,20 +2,32 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 15px;
+  margin-right: 40px;
+}
+.usermenu__text {
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  color: rgb(136, 129, 129);
+  transition: all 100ms ease;
+}
+.usermenu__name {
+  font-family: 'Dosis', sans-serif;
   font-weight: 600;
-  color: black;
 }
 .usermenu__btn {
-  border: 1px solid orange;
-  width: 60px;
-  height: 30px;
+  font-family: 'Dosis', sans-serif;
+  border: 1px solid rgb(206, 205, 205);
+  padding: 5px 10px;
+  color: rgb(136, 129, 129);
   background-color: white;
-  border-radius: 6px;
-  transition: all 200ms linear;
+  transition: all 100ms ease;
 }
 .usermenu__btn:hover,
 .usermenu__btn:focus {
-  transform: scale(1.1);
-  box-shadow: 6px 6px 20px 0px rgba(66, 68, 90, 1);
+  color: black;
+  font-weight: 600;
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 4px 2px 4px -10px, rgba(0, 0, 0, 0.2) -2px -1px 0px inset;
 }
