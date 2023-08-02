@@ -23,6 +23,7 @@
   color: rgb(136, 129, 129);
   background-color: white;
   transition: all 100ms ease;
+  cursor: pointer;
 }
 .usermenu__btn:hover,
 .usermenu__btn:focus {

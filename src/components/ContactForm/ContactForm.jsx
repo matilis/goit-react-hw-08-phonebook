@@ -9,22 +9,29 @@ export const ContactForm = () => {
   const stateContacts = useSelector(selectContacts);
   const stateContactsNames = stateContacts.map(contact => contact.name);
 
-  const handleSubmit = e => {
-    e.preventDefault();
+  const handleSubmit = event => {
+    event.preventDefault();
     const contact = {
-      name: e.target.elements.name.value,
-      phone: e.target.elements.phone.value,
+      name: event.target.elements.name.value,
+      number: event.target.elements.number.value,
     };
 
     if (stateContactsNames.includes(contact.name)) {
-      e.target.reset();
+      event.target.reset();
       return alert(`${contact.name} is alredy in contacts`);
     }
 
     dispatch(addContact(contact));
 
-    e.target.reset();
+    event.target.reset();
   };
+
+  // import css from './ContactForm.module.css';
+  // export const ContactForm = ({ onSubmit }) => {
+  //   const handleSubmit = e => {
+  //     e.preventDefault();
+  //     onSubmit(e);
+  //   };
 
   return (
     <div>
@@ -46,9 +53,9 @@ export const ContactForm = () => {
           Number
           <input
             type="tel"
-            name="phone"
+            name="number"
             pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
-            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            title="number number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
             placeholder="Contact number"
             className={css.form__input}

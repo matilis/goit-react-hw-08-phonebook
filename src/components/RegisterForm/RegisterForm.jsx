@@ -24,15 +24,30 @@ export const RegisterForm = () => {
       <form className={css.form} onSubmit={handleSubmit}>
         <label className={css.form__label}>
           Username
-          <input className={css.form__input} type="text" name="name" />
+          <input
+            className={css.form__input}
+            type="text"
+            name="name"
+            placeholder="John Nick"
+          />
         </label>
         <label className={css.form__label}>
           Email
-          <input className={css.form__input} type="email" name="email" />
+          <input
+            className={css.form__input}
+            type="email"
+            name="email"
+            placeholder="john.nick@gmail.com"
+          />
         </label>
         <label className={css.form__label}>
           Password
-          <input className={css.form__input} type="password" name="password" />
+          <input
+            className={css.form__input}
+            type="password"
+            name="password"
+            placeholder="xxxxxxx"
+          />
         </label>
         <button className={css.form__btn} type="submit">
           Register
