@@ -10,11 +10,10 @@ export const Filter = () => {
 
   return (
     <div className={css.filter}>
-      <h3>Find contact by name</h3>
       <input
         className={css.filter__input}
         onChange={handleInputChange}
-        placeholder="Enter name"
+        placeholder="Find contact by name"
       />
     </div>
   );

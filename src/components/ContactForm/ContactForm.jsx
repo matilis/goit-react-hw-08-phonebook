@@ -26,13 +26,6 @@ export const ContactForm = () => {
     event.target.reset();
   };
 
-  // import css from './ContactForm.module.css';
-  // export const ContactForm = ({ onSubmit }) => {
-  //   const handleSubmit = e => {
-  //     e.preventDefault();
-  //     onSubmit(e);
-  //   };
-
   return (
     <div>
       <form onSubmit={handleSubmit} className={css.form}>
