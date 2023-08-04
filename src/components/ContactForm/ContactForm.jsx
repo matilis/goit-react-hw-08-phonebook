@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
@@ -18,11 +19,29 @@ export const ContactForm = () => {
 
     if (stateContactsNames.includes(contact.name)) {
       event.target.reset();
-      return alert(`${contact.name} is alredy in contacts`);
+      return Notiflix.Notify.warning(`${contact.name} is alredy in contacts`, {
+        width: '500px',
+        position: 'center-top',
+        distance: '18px',
+        svgSize: '120px',
+        timeout: 3000,
+        borderRadius: '3px',
+        fontFamily: 'Dosis',
+        fontSize: '20px',
+      });
     }
 
     dispatch(addContact(contact));
-
+    Notiflix.Notify.success(`${contact.name} added`, {
+      width: '500px',
+      position: 'center-top',
+      distance: '18px',
+      svgSize: '120px',
+      timeout: 3000,
+      borderRadius: '3px',
+      fontFamily: 'Dosis',
+      fontSize: '20px',
+    });
     event.target.reset();
   };
 

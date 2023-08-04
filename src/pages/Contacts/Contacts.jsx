@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { ContactForm } from 'components';
 import { ContactList } from 'components';
 import { Filter } from 'components';
+import { Loader, Error } from 'components';
 import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import css from './Contact.module.css';
 
@@ -25,8 +26,8 @@ const Contacts = () => {
           <Filter />
         </div>
         <div>
-          {isLoading ? <p>Loading contacts...</p> : <ContactList />}
-          {error && <p>Data loading error</p>}
+          {isLoading ? <Loader /> : <ContactList />}
+          {error && <Error />}
         </div>
       </div>
     </div>

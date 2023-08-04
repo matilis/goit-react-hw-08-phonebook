@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Notiflix from 'notiflix';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteContact, editContact } from 'redux/contacts/operations';
 import { selectVisibleContacts } from 'redux/contacts/selectors';
@@ -30,6 +31,17 @@ export const ContactList = () => {
 
     dispatch(editContact(editedContact));
 
+    Notiflix.Notify.info(`${editedName} edited`, {
+      width: '500px',
+      position: 'center-top',
+      distance: '18px',
+      svgSize: '120px',
+      timeout: 3000,
+      borderRadius: '3px',
+      fontFamily: 'Dosis',
+      fontSize: '20px',
+    });
+
     setEditingContactId(null);
     setEditedName('');
     setEditedNumber('');
@@ -37,6 +49,16 @@ export const ContactList = () => {
 
   const handleDelete = id => {
     dispatch(deleteContact(id));
+    Notiflix.Notify.failure(`Contact DELETED`, {
+      width: '500px',
+      position: 'center-top',
+      distance: '18px',
+      svgSize: '120px',
+      timeout: 3000,
+      borderRadius: '3px',
+      fontFamily: 'Dosis',
+      fontSize: '20px',
+    });
   };
 
   return (

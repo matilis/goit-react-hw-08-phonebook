@@ -9,5 +9,5 @@ export * from './Navigation';
 export * from './PrivateRoute';
 export * from './RegisterForm';
 export * from './RestrictedRoute';
-
+export * from './Spinner';
 export * from './UserMenu';
