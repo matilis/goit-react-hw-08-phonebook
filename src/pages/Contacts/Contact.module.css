@@ -1,14 +1,20 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(206, 205, 205);
+}
 .list__wrapper {
   display: flex;
   justify-content: center;
 }
 .list__item {
-  width: 70%;
+  width: 71.5%;
   padding: 20px;
 }
 .homePage {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgb(206, 205, 205);
 }

@@ -27,14 +27,6 @@ export const Navigation = () => {
           Contacts
         </NavLink>
       )}
-      {isLoggedIn && (
-        <NavLink className={css.nav__link} to="/contacts">
-          Add Contact
-        </NavLink>
-      )}
-      <NavLink className={css.nav__filter} to="/contacts">
-        {isLoggedIn && <Filter />}
-      </NavLink>
     </nav>
   );
 };

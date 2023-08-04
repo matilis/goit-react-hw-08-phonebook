@@ -1,9 +1,10 @@
 .filter {
-  margin-left: 135px;
+  display: flex;
+  margin: 30px 40px 0 0;
 }
 
 .filter__input {
-  min-width: 500px;
+  min-width: 665px;
   font-size: 25px;
   font-weight: 200;
   border: 1px solid rgb(206, 205, 205);
@@ -16,11 +17,12 @@
 }
 .filter__input:hover,
 .filter__input:focus {
+  outline: none;
   color: black;
   font-weight: 400;
   border: none;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
     rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
-  transform: scale(1.1);
+  transform: scale(1.03);
 }

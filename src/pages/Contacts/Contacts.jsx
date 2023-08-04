@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet';
 import { useSelector } from 'react-redux';
+import { ContactForm } from 'components';
 import { ContactList } from 'components';
+import { Filter } from 'components';
 import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import css from './Contact.module.css';
 
@@ -18,8 +20,14 @@ const Contacts = () => {
         <div className={css.homePage}>
           <h1 className={css.homePage__title}>Phonebook</h1>
         </div>
-        {isLoading ? <p>Loading contacts...</p> : <ContactList />}
-        {error && <p>Data loading error</p>}
+        <div className={css.wrapper}>
+          <ContactForm />
+          <Filter />
+        </div>
+        <div>
+          {isLoading ? <p>Loading contacts...</p> : <ContactList />}
+          {error && <p>Data loading error</p>}
+        </div>
       </div>
     </div>
   );
