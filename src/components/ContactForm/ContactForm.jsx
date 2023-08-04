@@ -29,7 +29,7 @@ export const ContactForm = () => {
   return (
     <div className={css.wrapper}>
       <form onSubmit={handleSubmit} className={css.form}>
-        <label className={css.form__label}>
+        <label className={css.form__name}>
           <input
             type="text"
             name="name"
@@ -41,7 +41,7 @@ export const ContactForm = () => {
           />
         </label>
 
-        <label className={css.form__label}>
+        <label className={css.form__number}>
           <input
             type="tel"
             name="number"

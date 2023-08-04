@@ -1,13 +1,20 @@
 .wrapper {
+  height: 50px;
   margin: 30px 0 0 40px;
 }
 
 .form {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+  position: relative;
 }
-
+.form__name {
+  position: absolute;
+  top: 5px;
+}
+.form__number {
+  position: absolute;
+  top: 5px;
+  left: 265px;
+}
 .form__input {
   min-width: 200px;
   font-size: 25px;
@@ -32,12 +39,15 @@
 }
 
 .form__button {
+  position: absolute;
+  top: 2px;
+  left: 530px;
+  width: 230px;
   font-size: 30px;
   font-family: 'Dosis', sans-serif;
   border: 1px solid rgb(206, 205, 205);
   border-radius: 3px;
-
-  padding: 5px 14px;
+  padding: 5px 0;
   color: rgb(136, 129, 129);
   background-color: white;
   transition: all 100ms ease;
