@@ -2,7 +2,6 @@ import css from './Navigation.module.css';
 import homeSvg from 'images/icon-home.png';
 import { useAuth } from 'hooks';
 import { NavLink } from 'react-router-dom';
-import { Filter } from 'components/Filter';
 import { activeStyle } from 'styles';
 
 export const Navigation = () => {
