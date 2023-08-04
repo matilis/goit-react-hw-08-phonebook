@@ -4,6 +4,7 @@ import { deleteContact, editContact } from 'redux/contacts/operations';
 import { selectVisibleContacts } from 'redux/contacts/selectors';
 import editSvg from 'images/icon-pencil.png';
 import deleteSvg from 'images/icon-garbage.png';
+import saveSvg from 'images/icon-save.gif';
 import css from './ContactList.module.css';
 
 export const ContactList = () => {
@@ -47,15 +48,25 @@ export const ContactList = () => {
               <input
                 type="text"
                 value={editedName}
+                className={css.contacts__wrapperName}
                 onChange={e => setEditedName(e.target.value)}
               />
               <input
                 type="text"
                 value={editedNumber}
+                className={css.contacts__wrapperNumber}
                 onChange={e => setEditedNumber(e.target.value)}
               />
-              <button type="button" onClick={() => handleSave(contact.id)}>
-                Save
+              <button
+                className={css.contacts__wrapperBtn}
+                type="button"
+                onClick={() => handleSave(contact.id)}
+              >
+                <img
+                  className={css.contact__icon}
+                  src={saveSvg}
+                  alt="save icon"
+                />
               </button>
             </>
           ) : (
