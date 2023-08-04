@@ -1,0 +1,15 @@
+.appbar__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.appbar__item {
+  height: 50px;
+  width: 70%;
+  padding: 20px;
+  border-bottom: 1px solid rgb(206, 205, 205);
+  font-family: 'Dosis', sans-serif;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
